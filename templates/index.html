@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Drowsiness System</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 { margin-bottom: 10px; }
+        .container {
+            display: inline-block;
+            border: 5px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+        }
+        .status { margin-top: 15px; font-size: 1.2rem; color: #bbb; }
+    </style>
+</head>
+<body>
+
+    <h1>Drowsiness Detection System</h1>
+    <p>Real-time Monitoring</p>
+
+    <div class="container">
+        <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+    </div>
+
+    <div class="status">
+        <p>Pastikan volume speaker laptop Anda menyala.</p>
+    </div>
+
+</body>
+</html>
